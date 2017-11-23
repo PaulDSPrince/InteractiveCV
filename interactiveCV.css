@@ -36,13 +36,49 @@ aside .name
 aside .intro 
 {
 	border-bottom: 1px #4499FF;
+	color: #0644AA;
+	font-size: 20px;
+}
+
+aside .media
+{
+	border-bottom: 1px #4499FF;
+	color: #0644AA;
+	font-size: 20px;
+}
+
+footer
+{
+	position: fixed;
+	width: 180px;
+	bottom: 0px;
+	left: 0px;
+	background-color: #66AAFF;
+	z-index:200;
+	margin: 0px auto;
+	padding: 5px 20px 10px 20px;
+	border-width: 0px 0px 2px 0px;
+}
+
+footer small
+{
+	text-align: center;
+	font-style: italic;
+	color: #0644AA;
+}
+
+footer .media a:hover
+{
+	cursor: pointer;
 }
 
 article
 {
 	position: absolute;
 	left: 220px;
+	padding-bottom: 20px;
 	width: calc(100% - 220px);
+	
 }
 
 article div
