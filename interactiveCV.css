@@ -1,0 +1,157 @@
+/*Style sheet for interactive CV*/
+
+/*set background of site in body tags*/
+body
+{
+	margin: 0px;
+	padding: 0px 0px 1px 0px;
+	border: 0px;
+	z-index: 0;
+	background-color: #AACCFF;
+	overflow: auto;
+}
+
+aside
+{
+	position: fixed;
+	height: 100%;
+	width: 180px;
+	float: left;
+	background-color: #66AAFF;
+	margin: 0px auto;
+	padding: 15px 20px 0px 20px;
+	border-width: 0px 0px 2px 0px;
+	justify-content: center;
+    align-items: center;
+}
+
+aside .name
+{
+	font-size: 32px;
+	font-weight: bold;
+	text-decoration: none;
+	color: #0644AA;
+}
+
+aside .intro 
+{
+	border-bottom: 1px #4499FF;
+}
+
+article
+{
+	position: absolute;
+	left: 220px;
+	width: calc(100% - 220px);
+}
+
+article div
+{
+	margin: 1.5% 1.5% 1% 1.5%;
+	border: 1% 1% 1% 1%;
+	border-radius: 10px;
+	padding: 1% 1.5% 1% 1.5%;
+}
+
+article div h1
+{
+	text-decoration: underline;
+	font-size: 1.75em;
+	display: inline;
+}
+
+article div .toggleButton
+{
+	text-align: right;
+	font-size: 1.75em;
+	font-weight: bolder;
+	display: inline;
+	float: right;
+}
+
+article div .toggleButton:hover
+{
+	cursor: pointer;
+}
+
+article div div
+{
+	margin: 10px 0px 5px 0px;
+	border: 0px 0px 0px 0px;
+	padding: 0px 5px 0px 2px;
+}
+
+article div div .location
+{
+	margin: 5px 0px 5px 0px;
+	border: 10px 10px 10px 10px;
+	padding: 10px 10px 10px 10px;
+	border-radius: 15px;
+	width: calc(100%-30px);
+}
+
+article div div .location .place
+{	
+	font-size: 1.25em;
+	font-weight: bold;
+}
+
+article div div .location .date
+{
+	float: right;
+	text-align: right;
+	font-style: italic;
+	font-size: 1.25em;
+}
+
+article div div .location .info
+{
+	text-indent: 5px;
+	font-size: 1em;
+	margin: 5px 5px 5px 5px;
+}
+
+article div div .location .info .moreInfo
+{ 
+	font-size: 0.75em; 
+	font-style: italic;
+}
+
+article div div .location .info .moreInfo:hover
+{
+	cursor: pointer;
+}
+
+article div div .location .subInfo
+{
+	text-indent: 15px;
+	font-size: 0.9em;
+	padding: 5px 10px 5px 10px;
+	margin: 2px 2px 2px 2px;
+}
+
+article div #education .location
+{
+	background-color: #FFFF99;
+}
+
+article div #skills .location
+{
+	background-color: #FFBB22;
+}
+
+article div #work .location
+{
+	background-color: #55DD55;
+}
+
+article div #information .location
+{
+	background-color: #FF4444;
+}
+
+article div #interests .location
+{
+	background-color: #CC44FF;
+}
+

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CV Homepage</title>
+	<meta name="author" content="Paul Prince">
+	<meta name="description" content="CV Homepage">	
+	<link type="text/css" rel="stylesheet" href="interactiveCV.css">
+	<script type="text/javascript" src="interactiveCV.js"></script>
+</head>
+
+<body>
+
+<aside>
+<img src="Paul3.jpg" alt="Picture of Paul Prince" title="Paul Prince" align="center" width="90%" border="3" style="border-color:#0644AA; border-radius:48%;">
+<a class="name">Paul Prince</a>
+<br>
+<div class="intro">Some words about me/intro to site</div>
+</aside>
+
+<article>
+<div style="background-color:#FFFF33;"><!--Education and Training panel-->
+<h1>Education and Training</h1>
+<a class="toggleButton" id="educationToggle" onclick="toggleBlock('education')">&oplus;</a>
+
+<div id="education" style="display: none;">
+
+<div class="location"> <!--The training room-->
+<a class="place">The Training Room</a>
+<a class="date">October 2016 - September 2017</a>
+<p class="info">Level 3 Certificate in Web Design & Development</p>
+<p class="subInfo">Site development and Network Fundamentals</p>
+<p class="subInfo">Specialist knowledge and implementation of HTML5, CSS3 and JavaScript</p>
+</div>
+
+<div class="location"> <!--University of Nottinham Qualifications-->
+<a class="place">University of Nottingham</a>
+<a class="date">2013 - 2016</a>
+<p class="info">BSc (Hons) in Mathematics, Third Class</p>
+</div>
+
+<div class="location"> <!--Cramlington Learning Village-->
+<a class="place">Cramlington Learning Village</a>
+<a class="date">2009 - 2013</a>
+<p class="info">A-Levels: Mathematics(A*), Further Mathematics(A*), Physics(A), Chemistry(A)</p>
+<p class="info">As-Levels: General Studies(A), Psychology(B)</p>
+<p class="info">8 GCSEs including Maths, English and Sciences <a onclick="toggleGCSE()" id="GCSEButton" class="moreInfo"> &nbsp; &nbsp;(show more)</a></p>
+<p class="subInfo" style="display: none;" id="GCSE">write in GCSEs</p><!--TODO: put in the gcse stuff-->
+<p class="info">Level 2 DiDA in ICT(Merit)</p>
+<p class="info">Level 2 Project</p>
+</div>
+
+</div>
+
+</div>
+
+<div style="background-color:orange;"><!--Key skills and experiences panel-->
+<h1>Key technical skills and Experiences</h1>
+<a class="toggleButton" id="skillsToggle" onclick="toggleBlock('skills')">&oplus;</a>
+
+<div id="skills" style="display: none;">
+
+<div class="location"> <!-- Skills from the training room-->
+
+<a class="place">Skills gained from The Training Room</a>
+<p class="info">CIW Web Foundations Associate</p>
+<p class="info">CIW Advanced HTML and CSS3 Specialist</p>
+<p class="info">CIW JavaScript specialist</p>
+
+</div>
+
+<div class="location"> <!--Other Coding experiences-->
+
+<a class="place">Other coding experiences</a>
+<p class="info">Coding programs used for University</p>
+<p class="subInfo">Matlab</p>
+<p class="subInfo">LaTeX</p>
+<p class="subInfo">Maple</p>
+<p class="subInfo">R</p>
+<p class="info">Personal interests in other coding languages</p>
+<p class="subInfo">Python</p>
+<p class="subInfo">C#</p>
+
+</div>
+
+<div class="location"> <!--Other Computing experiences-->
+
+<a class="place">Computing program knowledge</a>
+<p class="info">Use of Microsoft Office programs</p>
+<p class="subInfo">Microsoft Word</p>
+<p class="subInfo">Microsoft Excel</p>
+<p class="subInfo">Microsoft PowerPoint</p>
+<p class="subInfo">Microsoft Publisher</p>
+<p class="info">Basic knowledge of mac OS from home use</p>
+
+
+</div>
+
+
+<div class="location"> <!--More Useful Skills-->
+
+<a class="place">Other useful Skills</a>
+<p class="info">Communication</p>
+<p class="subInfo">Developed through coaching football for ages 3-18 for 7 years</p>
+<p class="info">Organisation</p>
+<p class="subInfo">Ran halls football team at University, including contact with league organisers, team selections and contact with opposition to confirm match arrangements.</p>
+
+</div>
+
+</div>
+
+</div>
+
+<div style="background-color:#22BB22;"><!--Work experience panel-->
+<h1>Work Experience</h1>
+<a class="toggleButton" id="workToggle" onclick="toggleBlock('work')">&oplus;</a>
+
+<div id="work" style="display: none;">
+
+<div class="location"><!--Amazon Flex-->
+<a class="place">Amazon Flex delivery driver</a>
+<a class="date">November 2017 - present</a>
+</div>
+
+<div class="location"><!--Wellfield Middle School-->
+<a class="place">Wellfield Middle School</a>
+<a class="date">June 2010</a>
+<p class="info">Teaching Assistant</p>
+<p class="subInfo">Assisted with supervision of student during maths and PE lessons</p>
+<p class="subInfo">Helped with the school cricket trip, supervising and scoring games for one of the teams</p>
+</div>
+
+</div>
+
+</div>
+
+<div style="background-color:#CC3333;"><!--Aditional Information panel-->
+<h1>Additional Information</h1>
+<a class="toggleButton" id="informationToggle" onclick="toggleBlock('information')">&oplus;</a>
+
+<div id="information" style="display: none;">
+
+<div class="location"><!--drivers licence-->
+<a class="place">Full drivers licence</a>
+<p class="info">Held since June 2012</p>
+<p class="info">No endorsements</p>
+</div>
+
+<div class="location"><!--Football certificates-->
+<a class="place">Qualified football coach</a>
+<p class="info">FA level 1 Coaching certificate <a style="font-style: italic;">(April 2011)</a></p>
+<p class="subInfo">Includes up to date first aid and safeguarding children courses <a style="font-style: italic;">(August 2017)</a></p>
+<p class="info">Enhanced DBS certificate <a style="font-style: italic;">(July 2015)</a> - Child workforce, Football coach (U18)</p>
+</div>
+
+</div>
+
+</div>
+
+<div style="background-color:#AA22BB;"><!--Other interests panel-->
+<h1>Other Interests</h1>
+<a class="toggleButton" id="interestsToggle" onclick="toggleBlock('interests')">&oplus;</a>
+
+<div id="interests" style="display: none;">
+
+<div class="location"><!--Gaming-->
+<a class="place">Computer Gaming</a>
+<p class="info">Single player games involving strategic descision making and problem solving</p>
+<p class="info">Socially with friends both online or in the same room</p>
+</div>
+
+<div class="location"><!--Space-->
+<a class="place">Space Exploration and Discovery</a>
+<p class="info">Finding out more about planets and bodies within our solar system</p>
+<p class="info">Orbital mechanics and the maths involved in manoeuvering spacecraft to different locations</p>
+</div>
+
+</div>
+
+</div>
+</article>
+
+
+</body>
