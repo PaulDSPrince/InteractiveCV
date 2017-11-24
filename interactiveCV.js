@@ -16,9 +16,20 @@ function toggleBlock(blockID) {
 function toggleGCSE() {
 	if (document.getElementById('GCSE').style.display === "none") {
 		document.getElementById('GCSE').style.display = "block";
-		document.getElementById('GCSEButton').innerHTML = "&nbsp; &nbsp;(hide)";
+		document.getElementById('GCSEButton').innerHTML = "&nbsp; &nbsp;(hide grades)";
 	} else {
 		document.getElementById('GCSE').style.display = "none";
-		document.getElementById('GCSEButton').innerHTML = "&nbsp; &nbsp;(show more)";
+		document.getElementById('GCSEButton').innerHTML = "&nbsp; &nbsp;(show grades)";
+	}
+}
+
+//Toggle the images of games
+function toggleGames() {
+	if (document.getElementById('Games').style.display === "none") {
+		document.getElementById('Games').style.display = "block";
+		document.getElementById('GamesButton').innerHTML = "&nbsp; &nbsp;(hide examples)";
+	} else {
+		document.getElementById('Games').style.display = "none";
+		document.getElementById('GamesButton').innerHTML = "&nbsp; &nbsp;(see examples)";
 	}
 }

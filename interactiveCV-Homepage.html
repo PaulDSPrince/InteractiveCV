@@ -14,18 +14,19 @@
 <img src="Paul3.jpg" alt="Picture of Paul Prince" title="Paul Prince" align="center" width="90%" border="3" style="border-color:#0644AA; border-radius:48%;">
 <a class="name">Paul Prince</a>
 <br>
-<div class="intro">Some words about me/intro to site</div>
+<div class="intro">This webpage is an interactive copy of my CV and has been designed in order to demonstrate some of the techniques and abilities that I have learned using HTML, CSS and JavaScript.</div>
 </aside>
 
 <footer>
-<div class="media">
+<a class="media">
 <a href="https://www.linkedin.com/in/PaulDSPrince" target="_blank"><img src="Linkedin.png" alt="LinkedIn logo" title="LinkedIn" height="30px" width="30px"></a>
 <a href="https://github.com/PaulDSPrince?tab=repositories" target="_blank"><img src="Github.png" alt="Github logo" title="Github" height="30px" width="30px"></a>
+</a>
 <br><small>Interactive CV homepage <br>&copy; Paul Prince Nov 2017</small>
 </footer>
 
 <article>
-<div style="background-color:#44FF99;"><!--Personal Profile-->
+<div style="background-color: #FFBB22;"><!--Personal Profile-->
 <h1>Personal Profile</h1>
 <div id="profile">
 <div class="location"><!--Profile text-->
@@ -52,6 +53,7 @@
 <a class="place">University of Nottingham</a>
 <a class="date">2013 - 2016</a>
 <p class="info">BSc (Hons) in Mathematics, Third Class</p>
+
 </div>
 
 <div class="location"> <!--Cramlington Learning Village-->
@@ -59,8 +61,47 @@
 <a class="date">2009 - 2013</a>
 <p class="info">A-Levels: Mathematics(A*), Further Mathematics(A*), Physics(A), Chemistry(A)</p>
 <p class="info">As-Levels: General Studies(A), Psychology(B)</p>
-<p class="info">8 GCSEs including Maths, English and Sciences <a onclick="toggleGCSE()" id="GCSEButton" class="moreInfo"> &nbsp; &nbsp;(show more)</a></p>
-<p class="subInfo" style="display: none;" id="GCSE">write in GCSEs</p><!--TODO: put in the gcse stuff-->
+<p class="info">8 GCSEs including Maths and English<a onclick="toggleGCSE()" id="GCSEButton" class="moreInfo"> &nbsp; &nbsp;(show grades)</a></p>
+<div class="subInfo" style="display: none;" id="GCSE">
+<table style="width:240px">
+  <tr>
+    <th>Subject</th>
+    <th>Grade</th> 
+  </tr>
+  <tr>
+    <td>Mathematics</td>
+    <td>A*</td> 
+  </tr>
+  <tr>
+    <td>English</td>
+    <td>A</td> 
+  </tr>
+  <tr>
+    <td>English Literature</td>
+    <td>A</td> 
+  </tr>
+  <tr>
+    <td>Chemistry</td>
+    <td>A*</td> 
+  </tr>
+  <tr>
+    <td>Physics</td>
+    <td>A*</td> 
+  </tr>
+  <tr>
+    <td>Biology</td>
+    <td>A</td> 
+  </tr>
+    <tr>
+    <td>Business Studies</td>
+    <td>A</td> 
+  </tr>
+  <tr>
+    <td>Physical Education</td>
+    <td>B</td> 
+  </tr>
+</table>
+</div>
 <p class="info">Level 2 DiDA in ICT(Merit)</p>
 <p class="info">Level 2 Project</p>
 </div>
@@ -69,7 +110,7 @@
 
 </div>
 
-<div style="background-color:orange;"><!--Key skills and experiences panel-->
+<div style="background-color: #FFBB22;"><!--Key skills and experiences panel-->
 <h1>Key technical skills and Experiences</h1>
 <a class="toggleButton" id="skillsToggle" onclick="toggleBlock('skills')">&oplus;</a>
 
@@ -126,7 +167,7 @@
 
 </div>
 
-<div style="background-color:#22BB22;"><!--Work experience panel-->
+<div style="background-color:#FFFF33;"><!--Work experience panel-->
 <h1>Work Experience</h1>
 <a class="toggleButton" id="workToggle" onclick="toggleBlock('work')">&oplus;</a>
 
@@ -149,7 +190,7 @@
 
 </div>
 
-<div style="background-color:#CC3333;"><!--Aditional Information panel-->
+<div style="background-color: #FFBB22;"><!--Aditional Information panel-->
 <h1>Additional Information</h1>
 <a class="toggleButton" id="informationToggle" onclick="toggleBlock('information')">&oplus;</a>
 
@@ -172,7 +213,7 @@
 
 </div>
 
-<div style="background-color:#AA22BB;"><!--Other interests panel-->
+<div style="background-color:#FFFF33;"><!--Other interests panel-->
 <h1>Other Interests</h1>
 <a class="toggleButton" id="interestsToggle" onclick="toggleBlock('interests')">&oplus;</a>
 
@@ -180,14 +221,21 @@
 
 <div class="location"><!--Gaming-->
 <a class="place">Computer Gaming</a>
-<p class="info">Single player games involving strategic descision making and problem solving</p>
-<p class="info">Socially with friends both online or in the same room</p>
+<p class="info">Single player games involving strategic descision making and problem solving<a onclick="toggleGames()" id="GamesButton" class="moreInfo"> &nbsp; &nbsp;(see examples)</a></p>
+<div class="subInfo" style="display: none;" id="Games">
+<p><img src="gameLogos/FM18.png" alt="Football Manager 2018 logo" height="60px" width="120px"><a class="title">Football Manager</a><br>Manage football teams from all over the world<br><a class="link" href="http://store.steampowered.com/app/624090/Football_Manager_2018/" target="_blank">Football Manager 2018 Steam page</a></p>
+<p><img src="gameLogos/shenzhen.jpg" alt="Shenzhen I/O logo" height="60px" width="120px"><a class="title">Shenzhen I/O</a><br>Write codes for microcontrolers to solve problems<br><a class="link" href="http://store.steampowered.com/app/504210/SHENZHEN_IO/" target="_blank">Shenzhen Steam page</a></p>
+<p><img src="gameLogos/rimworld.jpg" alt="Rimworld logo" height="60px" width="120px"><a class="title">Rimworld</a><br>Control a small colony to survive after crashing on a distant planet<br><a class="link" href="http://store.steampowered.com/app/294100/RimWorld/" target="_blank">Rimworld Steam page</a></p>
+<p><img src="gameLogos/KSP.png" alt="Kerbal Space Program logo" height="60px" width="120px"><a class="title">Kerbal Space Program</a><br>Design and build space craft to explore the solar system<br><a class="link" href="http://store.steampowered.com/app/220200/Kerbal_Space_Program/" target="_blank">KSP Steam page</a></p>
+<p><img src="gameLogos/factorio.png" alt="Factorio logo" height="60px" width="120px"><a class="title">Factorio</a><br>Build a factory to defend itself and launch a satellite<br><a class="link" href="http://store.steampowered.com/app/427520/Factorio/" target="_blank">Factorio Steam page</a></p>
+</div>
+<p class="info" style="clear: left;">Socially with friends both online or in the same room</p>
 </div>
 
 <div class="location"><!--Space-->
 <a class="place">Space Exploration and Discovery</a>
-<p class="info">Finding out more about planets and bodies within our solar system</p>
 <p class="info">Orbital mechanics and the maths involved in manoeuvering spacecraft to different locations</p>
+<p class="info">Finding out more about planets and bodies within our solar system</p>
 </div>
 
 </div>
