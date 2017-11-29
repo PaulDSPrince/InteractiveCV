@@ -203,10 +203,11 @@ article div div .location .subInfo p .link
 	font-style: italic;
 }
 
-article div div .location .subInfo p img
+article div div .location .subInfo p img, article div div .location .subInfo p iframe
 {
 	float: left;
 	margin: 2px 8px 3px 4px;
+	padding: 0px 1px 0px 0px;
 }
 
 article div #education .location, article div #work .location, article div #interests .location

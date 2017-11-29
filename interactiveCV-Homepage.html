@@ -10,14 +10,14 @@
 
 <body>
 
-<aside>
+<aside> <!--Sidebar with photo and intro-->
 <img src="Paul3.jpg" alt="Picture of Paul Prince" title="Paul Prince" align="center" width="90%" border="3" style="border-color:#0644AA; border-radius:48%;">
 <a class="name">Paul Prince</a>
 <br>
 <div class="intro">This webpage is an interactive copy of my CV and has been designed in order to demonstrate some of the techniques and abilities that I have learned using HTML, CSS and JavaScript.</div>
 </aside>
 
-<footer>
+<footer> <!--Copyright and media links-->
 <a class="media">
 <a href="https://www.linkedin.com/in/PaulDSPrince" target="_blank"><img src="Linkedin.png" alt="LinkedIn logo" title="LinkedIn" height="30px" width="30px"></a>
 <a href="https://github.com/PaulDSPrince?tab=repositories" target="_blank"><img src="Github.png" alt="Github logo" title="Github" height="30px" width="30px"></a>
@@ -63,7 +63,7 @@
 <p class="info">As-Levels: General Studies(A), Psychology(B)</p>
 <p class="info">8 GCSEs including Maths and English<a onclick="toggleGCSE()" id="GCSEButton" class="moreInfo"> &nbsp; &nbsp;(show grades)</a></p>
 <div class="subInfo" style="display: none;" id="GCSE">
-<table style="width:240px">
+<table style="width:240px"> <!--Table of GCSE grades-->
   <tr>
     <th>Subject</th>
     <th>Grade</th> 
@@ -173,11 +173,6 @@
 
 <div id="work" style="display: none;">
 
-<div class="location"><!--Amazon Flex-->
-<a class="place">Amazon Flex delivery driver</a>
-<a class="date">November 2017 - present</a>
-</div>
-
 <div class="location"><!--Wellfield Middle School-->
 <a class="place">Wellfield Middle School</a>
 <a class="date">June 2010</a>
@@ -222,20 +217,35 @@
 <div class="location"><!--Gaming-->
 <a class="place">Computer Gaming</a>
 <p class="info">Single player games involving strategic descision making and problem solving<a onclick="toggleGames()" id="GamesButton" class="moreInfo"> &nbsp; &nbsp;(see examples)</a></p>
-<div class="subInfo" style="display: none;" id="Games">
+<div class="subInfo" style="display: none;" id="Games"> <!--Games images, descriptions and links-->
+
 <p><img src="gameLogos/FM18.png" alt="Football Manager 2018 logo" height="60px" width="120px"><a class="title">Football Manager</a><br>Manage football teams from all over the world<br><a class="link" href="http://store.steampowered.com/app/624090/Football_Manager_2018/" target="_blank">Football Manager 2018 Steam page</a></p>
+
 <p><img src="gameLogos/shenzhen.jpg" alt="Shenzhen I/O logo" height="60px" width="120px"><a class="title">Shenzhen I/O</a><br>Write codes for microcontrolers to solve problems<br><a class="link" href="http://store.steampowered.com/app/504210/SHENZHEN_IO/" target="_blank">Shenzhen Steam page</a></p>
+
 <p><img src="gameLogos/rimworld.jpg" alt="Rimworld logo" height="60px" width="120px"><a class="title">Rimworld</a><br>Control a small colony to survive after crashing on a distant planet<br><a class="link" href="http://store.steampowered.com/app/294100/RimWorld/" target="_blank">Rimworld Steam page</a></p>
+
 <p><img src="gameLogos/KSP.png" alt="Kerbal Space Program logo" height="60px" width="120px"><a class="title">Kerbal Space Program</a><br>Design and build space craft to explore the solar system<br><a class="link" href="http://store.steampowered.com/app/220200/Kerbal_Space_Program/" target="_blank">KSP Steam page</a></p>
+
 <p><img src="gameLogos/factorio.png" alt="Factorio logo" height="60px" width="120px"><a class="title">Factorio</a><br>Build a factory to defend itself and launch a satellite<br><a class="link" href="http://store.steampowered.com/app/427520/Factorio/" target="_blank">Factorio Steam page</a></p>
+
 </div>
 <p class="info" style="clear: left;">Socially with friends both online or in the same room</p>
 </div>
 
 <div class="location"><!--Space-->
 <a class="place">Space Exploration and Discovery</a>
+<p class="info">Finding out more about planets and bodies within our solar system<a onclick="toggleSpace()" id="SpaceButton" class="moreInfo"> &nbsp; &nbsp;(see more)</a></p>
+<div class="subInfo" style="display: none;" id="Space"> <!--Space videos and descriptions-->
+
+<p><iframe width="420px" height="225px" src="https://www.youtube.com/embed/iZCRFRgSgas" frameborder="0" allowfullscreen></iframe><a class="title">Mars 2020 rover</a><br>Mars already has a rover, Curiosity, but NASA are planning to launch another rover to the Martian surface in 2020.<br>This rover will have more up to date technology on it that can analyse rocks from the surface whislt also having the capability to help return samples back to Earth.<br>The aim is to continue the search for life and allowing samples to be returned to Earth allows for a lot more analysis of potential signs of life on another planet.<br><br><a class="link" href="https://www.youtube.com/watch?v=iZCRFRgSgas" target="_blank">Open this video in youtube</a>
+</p>
+
+<p><iframe width="420px" height="225px" src="https://www.youtube.com/embed/6ez2MDjRbzs" frameborder="0" allowfullscreen></iframe><a class="title">Stratolaunch</a><br>The worlds largest plane, designed to carry rockets containing satellites or other payloads, into a low Earth orbit.<br>The rocket will be mounted on the central wing of the plane and be carried up to a high atmospheric altitude.  This reduces the amount of fuel and parts needed to overcome gravity by the rocket as the lift that the planes wings generate create a lot of the upward forces.<br>The plane itself will release the rocket high in the atmosphere and then return to land as a more standard plane would.  This also means that the plane is recoverable and reusable saving money over more traditional launch stages of rockets that can't be reused.<br>Once released from the plane, the rocket can adjust its orbit, using its own thrusters and then release its payload into its desired position before deorbiting itself if needed.<br><br><a class="link" href="https://www.youtube.com/watch?v=6ez2MDjRbzs" target="_blank">Open this video in youtube</a>
+</p>
+
+</div>
 <p class="info">Orbital mechanics and the maths involved in manoeuvering spacecraft to different locations</p>
-<p class="info">Finding out more about planets and bodies within our solar system</p>
 </div>
 
 </div>

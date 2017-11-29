@@ -33,3 +33,14 @@ function toggleGames() {
 		document.getElementById('GamesButton').innerHTML = "&nbsp; &nbsp;(see examples)";
 	}
 }
+
+//Toggle the images of games
+function toggleSpace() {
+	if (document.getElementById('Space').style.display === "none") {
+		document.getElementById('Space').style.display = "block";
+		document.getElementById('SpaceButton').innerHTML = "&nbsp; &nbsp;(hide more)";
+	} else {
+		document.getElementById('Space').style.display = "none";
+		document.getElementById('SpaceButton').innerHTML = "&nbsp; &nbsp;(see more)";
+	}
+}
